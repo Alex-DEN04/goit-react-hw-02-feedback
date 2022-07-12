@@ -1,15 +1,29 @@
+import PropTypes from 'prop-types';
+import { Box } from 'components/Box';
+
+import {Button} from './FeedbackOptions.styled'
+
 export default function FeedbackOptions({ onLeaveFeedback, options }) {
   return (
-    <>
-      <button type="button" onClick={() => onLeaveFeedback(options[0])}>
+    <Box
+      display="flex"
+      ml={[4]}
+      position="relative"
+    >
+      <Button type="button" onClick={() => onLeaveFeedback(options[0])}>
         Good
-      </button>
-      <button type="button" onClick={() => onLeaveFeedback(options[1])}>
+      </Button>
+      <Button type="button" onClick={() => onLeaveFeedback(options[1])}>
         Neutral
-      </button>
-      <button type="button" onClick={() => onLeaveFeedback(options[2])}>
+      </Button>
+      <Button type="button" onClick={() => onLeaveFeedback(options[2])}>
         Bad
-      </button>
-    </>
+      </Button>
+    </Box>
   );
 }
+
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+};

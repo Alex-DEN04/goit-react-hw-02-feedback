@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function Statistics({
   good,
@@ -18,10 +18,10 @@ export default function Statistics({
   );
 }
 
-// Statistics.propTypes = {
-//   good: PropTypes.objectOf(PropTypes.number).isRequired,
-//   neutral: PropTypes.number.isRequired,
-//   bad: PropTypes.number.isRequired,
-//   total: PropTypes.func.isRequired,
-//   stats: PropTypes.func.isRequired,
-// };
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};
