@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import {Title} from './Section.styled'
+import { Title } from './Section.styled';
 
 export default function Section({ title, children }) {
   return (

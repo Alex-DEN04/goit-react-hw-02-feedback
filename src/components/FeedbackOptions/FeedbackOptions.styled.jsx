@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Button = styled.button`
-    display: inline-flex;
+  display: inline-flex;
   align-items: center;
   justify-content: start;
   padding-top: ${p => p.theme.space[2]}px;
@@ -17,8 +17,14 @@ export const Button = styled.button`
   line-height: ${p => p.theme.lineHeights.body};
   border-radius: ${p => p.theme.radii.normal};
   margin-right: ${p => p.theme.space[4]}px;
-  cursor: pointer; 
+  cursor: pointer;
   &:hover {
     background-color: ${p => p.theme.colors.accent};
   }
+`;
+
+export const Item = styled.li`
+  list-style-type: none;
+  padding: ${p => p.theme.space[0]}px;
+  margin: ${p => p.theme.space[0]}px;
 `;
