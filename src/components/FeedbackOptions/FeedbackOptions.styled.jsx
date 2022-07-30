@@ -4,6 +4,7 @@ export const Button = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: start;
+  text-transform: capitalize;
   padding-top: ${p => p.theme.space[2]}px;
   padding-bottom: ${p => p.theme.space[2]}px;
   padding-left: ${p => p.theme.space[4]}px;
